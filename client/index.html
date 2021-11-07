@@ -2,9 +2,26 @@
 <html>
   <head>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body class="container">
+    
     <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Read your fortune</button>  
+    <button id="groceryButton">See Grocery List</button>
+
+    <main>
+      <h1>Grocery List</h1>
+      <section>
+        <form>
+          <input type="text" id="input" placeholder="Add Item" />
+          <input type="number" id="qty" placeholder="Add Amount"/>
+          <button id="add">Add</button>
+        </form>
+      </section>
+      <ul></ul>
+      <aside id="message"></aside>
+    </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
@@ -16,5 +33,16 @@
             });
       };
     </script>
+    <script>
+      document.getElementById("fortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+    </script>
+  
+    <script src="newClient.js"></script>
   </body>
 </html>
