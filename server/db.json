@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "item": "Nutmeg",
+      "quantity": 1
+      
+    },
+    {
+      "id": 2,
+      "item": "Eggs",
+      "quantity": 12
+      
+      
+    },
+    {
+      "id": 3,
+      "item": "Jambalaya Mix",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "item": "Canned Corn",
+      "quantity": 2
+        
+    },
+    {
+      "id": 5,
+      "item": "Bananas",
+      "quantity": 5
+    }
+  ]
